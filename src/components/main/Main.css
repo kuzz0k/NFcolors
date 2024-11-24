@@ -1,31 +1,3 @@
-@media screen and (max-width: 900px) {
-  .bottom-box-category {
-    display: none;
-  }
-
-  .bottom-box-category .bgbox {
-    display: none;
-  }
-
-  main {
-    flex-direction: column;
-  }
-
-  .filter {
-    width: 100%;
-    height: 400px;
-  }
-}
-
-@media (min-width: 900px) {
-  .bottom-box-category {
-    width: 400px;
-    height: 100px;
-  }
-}
-
-
-
 main {
   width: 100%;
   display: flex;
@@ -100,6 +72,8 @@ main {
   background-color: var(--main-color);
   display: flex;
   justify-content: space-between;
+  width: 400px;
+  height: 100px;
 }
 
 .bgbox {
@@ -124,7 +98,7 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-
+  height: 930px;
 }
 
 .page-container .pagination {

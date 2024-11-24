@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Pagination from './Pagination';
 
 let colorsData = [
@@ -1157,6 +1157,24 @@ let colorsData = [
 ]
 
 const ColorsDisplay = ({ category, currentPage, setCurrentPage }) => {
+  // const [colorsData, setColorsData] = useState([]);
+  // const [error, setError] = useState(null);
+
+  // useEffect(() => {
+  //   fetch('../../data/colors.json')
+  //     .then(response => {
+  //       if (!response.ok) {
+  //         throw new Error('Ошибка при чтении файла!');
+  //       }
+  //       return response.json();
+  //     })
+  //     .then(data => setColorsData(data))
+  //     .catch(error => setError(error.message));
+  // }, []);
+
+  // if (error) {
+  //   return <div>Ошибка: {error}</div>;
+  // }
 
 
   const itemsPerPage = 9;
