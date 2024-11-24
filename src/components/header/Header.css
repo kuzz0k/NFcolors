@@ -1,0 +1,32 @@
+header {
+  height: 1080px;
+  width: 100;
+  display: flex;
+}
+
+.header-container {
+  margin-top: 182px;
+  height: 650px;
+  width: 1250px;
+  transform:rotate(-9.37deg);
+  background-color: var(--light-color);
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 80px 50px 0 0 var(--shadow-color);
+
+}
+
+.logo {
+  color: var(--text-color);
+  font-size: 120px;
+  transform: rotate(9.37deg);
+  width: 500px;
+  margin: 100px;
+}
+
+.overview {
+  color: var(--background-color);
+  font-size: 70px;
+  width: 420px;
+  margin: 50px;
+}

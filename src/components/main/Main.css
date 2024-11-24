@@ -1,0 +1,272 @@
+@media screen and (max-width: 900px) {
+  .bottom-box-category {
+    display: none;
+  }
+
+  .bottom-box-category .bgbox {
+    display: none;
+  }
+
+  main {
+    flex-direction: column;
+  }
+
+  .filter {
+    width: 100%;
+    height: 400px;
+  }
+}
+
+@media (min-width: 900px) {
+  .bottom-box-category {
+    width: 400px;
+    height: 100px;
+  }
+}
+
+
+
+main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+::selection {
+  color: var(--light-color);
+  background-color: var(--shadow-color);
+}
+
+.main-left-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+}
+
+.filter {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  width: 200px;
+}
+
+.filter-content {
+  background-color: var(--main-color);
+  border-radius: 50px 50px 0 0;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.color-filter-container {
+  height: 300px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.color-filter-container ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.color-filter-container ul li {
+  height: 50px;
+  width: 50px;
+  margin: 19px;
+  border-radius: 50%;
+  border: 5px solid var(--light-color);
+}
+
+.color-pick {
+  margin: 0;
+  appearance: none;
+  -webkit-appearance: none;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+.color-pick:hover {
+  cursor: pointer;
+}
+
+.color-pick:checked {
+  opacity: 0.2;
+}
+
+.bottom-box-category {
+  background-color: var(--main-color);
+  display: flex;
+  justify-content: space-between;
+}
+
+.bgbox {
+  width: 100px;
+  height: 100px;
+  background-color: var(--background-color);
+}
+
+.bgbox:last-child {
+  border-radius: 0 0 0 50%;
+}
+
+.bgbox:first-child {
+  border-radius: 0 0 50% 0;
+}
+
+
+
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.page-container .pagination {
+  margin: 100px 0 70px 0;
+}
+
+.box {
+  width: 54px;
+  height: 150px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box span {
+  position: absolute;
+  visibility: hidden;
+}
+
+.box:hover {
+  flex: 1.5; 
+  cursor: pointer;
+}
+
+.box:hover span {
+  visibility: visible;
+}
+
+.palette-container:hover .box:not(:hover) {
+  flex: 0.8;
+}
+
+.palette-container .box:last-child {
+  border-radius: 0 30px 30px 0;
+}
+
+.palette-container .box:first-child {
+  border-radius: 30px 0 0 30px;
+}
+
+.palette-container {
+  height: 150px;
+  width: 270px;
+  display: flex;
+  margin: 40px 30px;
+}
+
+#colors-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: start;
+  justify-content: start;
+  width: 990px;
+}
+
+
+
+
+.footer-box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.right-section {
+  width: 45%;
+  height: 38px;
+  background-color: var(--main-color);
+  border-radius: 80px 0 0 0;
+}
+
+.left-section {
+  width: 45%;
+  height: 75px;
+  background-color: var(--main-color);
+  border-radius: 0 100px 0 0;
+}
+
+
+
+
+.pagination-container {
+  display: flex;
+  justify-content: space-between;
+  width: 1050px;
+}
+
+.previous-button {
+  height: 70px;
+  width: 170px;
+  border-radius: 35px;
+  text-align: center;
+  font-size: 30px;
+  background-color: var(--main-color);
+  border: none;
+  color: var(--text-color);
+}
+
+.previous-button:disabled {
+  background-color: var(--main-color);
+  opacity: 50%;
+}
+
+.next-button {
+  height: 70px;
+  width: 150px;
+  border-radius: 35px;
+  text-align: center;
+  font-size: 30px;
+  background-color: var(--main-color);
+  border: none;
+  color: var(--text-color);
+}
+
+.next-button:disabled {
+  background-color: var(--main-color);
+  opacity: 50%;
+}
+
+.page-color {
+  height: 70px;
+  width: 70px;
+  border-radius: 35px;
+  text-align: center;
+  font-size: 30px;
+  background-color: var(--light-color);
+  border: none;
+  color: var(--text-color);
+  margin: 0 15px;
+}
+
+.number:disabled {
+  background-color: var(--light-color);
+  opacity: 30%;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button:hover:disabled {
+  cursor: initial;
+}

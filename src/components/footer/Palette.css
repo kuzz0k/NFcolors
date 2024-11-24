@@ -1,0 +1,37 @@
+.analogous-colors-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.color-box {
+  width: 100px;
+  height: 200px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+}
+
+.color-box span {
+  visibility: hidden;
+}
+
+.color-box:first-child {
+  color: var(--light-color);
+}
+
+.color-box:first-child + .color-box {
+  color: var(--light-color);
+}
+
+.color-box:hover {
+  transform: scale(1.15);
+  cursor: pointer;
+}
+
+.color-box:hover span {
+  visibility: visible;
+}
