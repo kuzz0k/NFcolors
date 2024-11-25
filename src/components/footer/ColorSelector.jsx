@@ -94,7 +94,6 @@ const ColorSelector = ({ hue, setHue, angleFromCategory }) => {
           style={{ backgroundColor: `hsl(${hue}, 50%, 50%)` }}
         ></div>
       </div>
-      <div className="gap-between"></div>
       <div className="info">
         <div className="rgb">
           <h3>rgb</h3>

@@ -17,31 +17,23 @@ const ColorCategory = ({ filters, setCategory, setCurrentPage, setHue, hue, setA
 
 
   return (
-    <div className='main-left-section'>
-      <div className="filter">
-        <div className="filter-content">
-          <h1>Filter</h1>
-          <div className='color-filter-container'>
-            <ul style={{ listStyleType: 'none', padding: 0 }}>
-              {filters.map((filter) => (
-                <li key={filter}>
-                    <input
-                      className={`${filter} color-pick`}
-                      style={{backgroundColor: `hsl(${colorToHue[filter]}, 50%, 50%)`}}
-                      type="radio"
-                      checked={selectedFilter === filter}
-                      onClick={() => handleFilterChange(filter)}
-                      readOnly
-                    />
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div className="bottom-box-category">
-        <div className="bgbox"></div>
-        <div className="bgbox"></div>
+    <div className="filter">
+      <div className="filters-label">Filter</div>
+      <div className='color-filter-container'>
+        <ul style={{ listStyleType: 'none', padding: 0 }}>
+          {filters.map((filter) => (
+            <li key={filter}>
+                <input
+                  className={`${filter} color-pick`}
+                  style={{backgroundColor: `hsl(${colorToHue[filter]}, 50%, 50%)`}}
+                  type="radio"
+                  checked={selectedFilter === filter}
+                  onClick={() => handleFilterChange(filter)}
+                  readOnly
+                />
+            </li>
+          ))}
+        </ul>
       </div>
     </div>
   )

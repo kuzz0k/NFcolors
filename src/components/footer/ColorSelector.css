@@ -1,11 +1,12 @@
 .select-color-content {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 .color-wheel-container {
   position: relative;
-  margin: 0 30px 0 0;
   width: 200px;
   height: 200px;
   background: conic-gradient(
@@ -32,7 +33,6 @@
 }
 
 .info {
-  margin: 0 0 0 30px;
   width: 200px;
   height: 200px;
   text-align: center;
@@ -49,11 +49,4 @@
 
 .info p, .info h3 {
   margin: 10px 0;
-}
-
-.gap-between {
-  height: 200px;
-  width: 10%;
-  background-color: var(--background-color);
-  border-radius: 0 0 75px 125px;
 }

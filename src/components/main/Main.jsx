@@ -26,10 +26,6 @@ const Main = ({ setHue, hue, setAngleFromCategory }) => {
           setCurrentPage={setCurrentPage}
         />
       </main>
-        <div className="footer-box">
-        <div className="left-section"></div>
-        <div className="right-section"></div>
-      </div>
     </>
   )
 }
