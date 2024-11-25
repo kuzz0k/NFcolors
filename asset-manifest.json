@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/NFcolors/static/css/main.b38dcefd.css",
-    "main.js": "/NFcolors/static/js/main.3a3c637d.js",
+    "main.css": "/NFcolors/static/css/main.3384575e.css",
+    "main.js": "/NFcolors/static/js/main.45fde645.js",
     "index.html": "/NFcolors/index.html",
-    "main.b38dcefd.css.map": "/NFcolors/static/css/main.b38dcefd.css.map",
-    "main.3a3c637d.js.map": "/NFcolors/static/js/main.3a3c637d.js.map"
+    "main.3384575e.css.map": "/NFcolors/static/css/main.3384575e.css.map",
+    "main.45fde645.js.map": "/NFcolors/static/js/main.45fde645.js.map"
   },
   "entrypoints": [
-    "static/css/main.b38dcefd.css",
-    "static/js/main.3a3c637d.js"
+    "static/css/main.3384575e.css",
+    "static/js/main.45fde645.js"
   ]
 }
