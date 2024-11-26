@@ -30,7 +30,7 @@ main {
 .color-filter-container {
   display: flex;
   flex-wrap: wrap;
-  margin-right: 50px;
+  margin-right: 3vw;
 }
 
 .color-filter-container ul {
@@ -39,19 +39,23 @@ main {
 }
 
 .color-filter-container ul li {
-  height: 50px;
-  width: 50px;
-  margin: 19px;
+  height: 3vw;
+  width: 3vw;
+  min-width: 15px;
+  min-height: 15px;
+  margin: 1vw;
   border-radius: 50%;
-  border: 5px solid var(--light-color);
+  border: 0.3vw solid var(--light-color);
 }
 
 .color-pick {
   margin: 0;
   appearance: none;
   -webkit-appearance: none;
-  height: 50px;
-  width: 50px;
+  height: 3vw;
+  width: 3vw;
+  min-width: 15px;
+  min-height: 15px;
   border-radius: 50%;
 }
 
