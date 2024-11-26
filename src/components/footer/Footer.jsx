@@ -1,11 +1,14 @@
+import React, { useState} from 'react'
 import ColorSelector from './ColorSelector'
 import Palette from './Palette';
 import './Footer.css'
 
-const Footer = ({ hue, setHue, angleFromCategory }) => {
+const Footer = () => {
+  const [hue, setHue] = useState(90);
+
   return (
     <footer>
-      <ColorSelector hue={hue} setHue={setHue} angleFromCategory={angleFromCategory}/>
+      <ColorSelector hue={hue} setHue={setHue}/>
       <Palette hue={hue}/>
     </footer>
   )

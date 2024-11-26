@@ -3,7 +3,7 @@ import ColorsDisplay from './ColorsDisplay'
 import './Main.css'
 import ColorCategory from './ColorCategory'
 
-const Main = ({ setHue, hue, setAngleFromCategory }) => {
+const Main = () => {
   const [category, setCategory] = useState(null)
   const [currentPage, setCurrentPage] = useState(1);
 
@@ -16,9 +16,6 @@ const Main = ({ setHue, hue, setAngleFromCategory }) => {
           filters={filters}
           setCategory={setCategory}
           setCurrentPage={setCurrentPage}
-          setHue={setHue}
-          hue={hue}
-          setAngleFromCategory={setAngleFromCategory}
          />
         <ColorsDisplay 
           category={category}

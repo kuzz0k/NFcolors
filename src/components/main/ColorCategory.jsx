@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import {colorToHue} from '../../utils/colorTransformations'
 
-const ColorCategory = ({ filters, setCategory, setCurrentPage, setHue, hue, setAngleFromCategory }) => {
+const ColorCategory = ({ filters, setCategory, setCurrentPage }) => {
   const [selectedFilter, setSelectedFilter] = useState(null);
 
   const handleFilterChange = (filter) => {
@@ -9,10 +9,6 @@ const ColorCategory = ({ filters, setCategory, setCurrentPage, setHue, hue, setA
     setSelectedFilter(newFilter)
     setCategory(newFilter)
     setCurrentPage(1)
-    if (newFilter) {
-      setHue(colorToHue[newFilter])
-      setAngleFromCategory(colorToHue[newFilter])
-    }
   };
 
 

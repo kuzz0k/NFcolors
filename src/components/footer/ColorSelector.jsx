@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import './ColorSelector.css'; // Добавьте CSS из вашего файла или настройте стили
 import { hslToRgb, hslToHex } from '../../utils/colorTransformations.js';
 
-const ColorSelector = ({ hue, setHue, angleFromCategory }) => {
+const ColorSelector = ({ hue, setHue }) => {
   const rgbDisplayRef = useRef(null);
   const hexDisplayRef = useRef(null);
   const colorWheelRef = useRef(null);
@@ -15,11 +15,11 @@ const ColorSelector = ({ hue, setHue, angleFromCategory }) => {
     const centerY = rect.height / 2;
 
     const radius = centerX - 12;
-    const radianAngle = (angleFromCategory - 90) * (Math.PI / 180);
+    const radianAngle = (hue - 90) * (Math.PI / 180);
 
     selectorRef.current.style.left = `${radius * Math.cos(radianAngle) + centerX - 12}px`;
     selectorRef.current.style.top = `${radius * Math.sin(radianAngle) + centerY - 12}px`;
-  }, [angleFromCategory])
+  }, [])
 
 
   const updateSelectorPosition = (x, y) => {
