@@ -60,10 +60,6 @@ const ColorsDisplay = ({ category, currentPage, setCurrentPage }) => {
             onClick={() => copyText(item.color1)}
             >
               <span style={{color: item.color5}}>{item.color1}</span>
-              <div className="copied"
-                style={{ color: item.color5 }}>
-                Copied
-              </div>
             </div>
             <div 
             className="box" 
@@ -71,10 +67,6 @@ const ColorsDisplay = ({ category, currentPage, setCurrentPage }) => {
             onClick={() => copyText(item.color2)}
             >
               <span style={{color: item.color5}}>{item.color2}</span>
-              <div className="copied"
-                style={{ color: item.color5 }}>
-                Copied
-              </div>
             </div>
             <div 
             className="box" 
@@ -82,10 +74,6 @@ const ColorsDisplay = ({ category, currentPage, setCurrentPage }) => {
             onClick={() => copyText(item.color3)}
             >
               <span style={{color: item.color1}}>{item.color3}</span>
-              <div className="copied"
-                style={{ color: item.color1 }}>
-                Copied
-              </div>
             </div>
             <div 
             className="box" 
@@ -93,10 +81,6 @@ const ColorsDisplay = ({ category, currentPage, setCurrentPage }) => {
             onClick={() => copyText(item.color4)}
             >
               <span style={{color: item.color1}}>{item.color4}</span>
-              <div className="copied"
-                style={{ color: item.color1 }}>
-                Copied
-              </div>
             </div>
             <div 
             className="box" 
@@ -104,10 +88,6 @@ const ColorsDisplay = ({ category, currentPage, setCurrentPage }) => {
             onClick={() => copyText(item.color5)}
             >
               <span style={{color: item.color1}}>{item.color5}</span>
-              <div className="copied"
-                style={{ color: item.color1 }}>
-                Copied
-              </div>
             </div>
           </div>
         ))}
