@@ -8,7 +8,7 @@
 
 body {
   margin: 0;
-  width: 100%;
+  background-color: var(--background-color);
 }
 
 #root {
@@ -18,6 +18,5 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: var(--background-color);
   color: var(--text-color);
 }

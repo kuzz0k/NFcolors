@@ -19,18 +19,18 @@ main {
   align-items: center;
   background-color: var(--main-color);
   border-radius: 50px;
-  margin-bottom: 11vh;
+  margin-bottom: 90px;
 }
 
 .filters-label {
-  font-size: 2vw;
+  font-size: 30px;
   margin: 0 50px;
 }
 
 .color-filter-container {
   display: flex;
   flex-wrap: wrap;
-  margin-right: 3vw;
+  margin-right: 50px;
 }
 
 .color-filter-container ul {
@@ -39,21 +39,21 @@ main {
 }
 
 .color-filter-container ul li {
-  height: 3vw;
-  width: 3vw;
+  height: 50px;
+  width: 50px;
   min-width: 15px;
   min-height: 15px;
-  margin: 1vw;
+  margin: 16px;
   border-radius: 50%;
-  border: 0.3vw solid var(--light-color);
+  border: 3px solid var(--light-color);
 }
 
 .color-pick {
   margin: 0;
   appearance: none;
   -webkit-appearance: none;
-  height: 3vw;
-  width: 3vw;
+  height: 50px;
+  width: 50px;
   min-width: 15px;
   min-height: 15px;
   border-radius: 50%;

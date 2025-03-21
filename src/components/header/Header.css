@@ -1,32 +1,33 @@
 header {
   width: 100;
   display: flex;
-  margin-bottom: 11vw;
+  margin-bottom: 170px;
 }
 
 .header-container {
-  margin-top: 11vw;
-  height: 40vw;
-  width: 80vw;
+  margin-top: 170px;
+  height: 650px;
+  width: 1250px;
   transform:rotate(-9.37deg);
   background-color: var(--light-color);
   display: flex;
   justify-content: space-between;
-  box-shadow: 5vw 3vw 0 0 var(--shadow-color);
+  box-shadow: 80px 50px 0 0 var(--shadow-color);
 
 }
 
 .logo {
   color: var(--text-color);
-  font-size: 7vw;
+  font-size: 110px;
   transform: rotate(9.37deg);
-  width: 31vw;
-  margin: 6vw;
+  width: 500px;
+  margin: 100px;
 }
 
 .overview {
   color: var(--background-color);
-  font-size: 4vw;
-  width: 26vw;
-  margin: 3vw;
+  font-size: 64px;
+  width: 410px;
+  margin: 50px;
 }
+
